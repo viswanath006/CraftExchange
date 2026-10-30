@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CraftExchange — Discover the Beauty of Handmade | Upcoming Artisan Marketplace</title>
+  <meta name="description" content="CraftExchange is an upcoming online marketplace connecting traditional artisans in Machilipatnam and Andhra Pradesh directly with conscious customers. Preserving heritage, ensuring fair earnings.">
+  
+  <!-- Google Fonts: Marcellus (Artisanal Display) & Plus Jakarta Sans (Clean Modern Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span class="badge-pill pulse"><i class="fa-solid fa-seedling"></i> Upcoming Concept</span>
+      <p>Empowering local artisans in <strong>Machilipatnam & Coastal Andhra Pradesh</strong>. We are currently onboarding artisans & pre-registering patrons!</p>
+      <a href="#contact" class="announcement-link">Join Early Access <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <div class="logo-mark">
+          <i class="fa-solid fa-hands-holding-circle"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">CraftExchange</span>
+          <span class="logo-tagline">Artisan to Home</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#problem-solution" class="nav-link">Problem & Solution</a></li>
+          <li><a href="#categories" class="nav-link">Categories</a></li>
+          <li><a href="#why-us" class="nav-link">Why Choose Us</a></li>
+          <li><a href="#machilipatnam" class="nav-link">Machilipatnam Hub</a></li>
+          <li><a href="#contact" class="nav-link">Contact & Waitlist</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-primary" onclick="openWaitlistModal('artisan')">
+            <i class="fa-solid fa-handshake-angle"></i> Join as Artisan
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="concept-badge">
+          <span class="dot"></span>
+          <span>Upcoming Marketplace Concept • Andhra Pradesh</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Discover the Beauty of <span class="highlight-text">Handmade</span>
+        </h1>
+        
+        <p class="hero-subtitle">
+          Direct from the hands of generational masters in <strong>Machilipatnam</strong> to your home. CraftExchange is building a fair, transparent bridge for authentic Kalamkari textiles, terracotta pottery, handloom fabrics, and handcrafted treasures.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-envelope-open-text"></i> Join Pre-Launch Waitlist
+          </a>
+          <a href="#categories" class="btn btn-secondary btn-lg">
+            <i class="fa-solid fa-shapes"></i> Explore Craft Categories
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">0%</span>
+            <span class="stat-label">Middlemen Commissions</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Authentic Handcrafted</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">Machilipatnam</span>
+            <span class="stat-label">Initial Launch Cluster</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card-wrapper">
+          <div class="main-image-card">
+            <img src="https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1000&q=80" alt="Master artisan hands shaping traditional pottery" class="hero-img">
+            <div class="image-overlay-info">
+              <span class="craft-tag"><i class="fa-solid fa-location-dot"></i> Coastal Andhra Crafts</span>
+              <h4>Heritage Hand-thrown Terracotta</h4>
+            </div>
+          </div>
+          
+          <!-- Floating Feature Badges -->
+          <div class="floating-badge badge-top-right">
+            <div class="badge-icon green"><i class="fa-solid fa-certificate"></i></div>
+            <div class="badge-text">
+              <strong>Pedana & Machilipatnam</strong>
+              <span>Kalamkari Block Print Heritage</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-left">
+            <div class="badge-icon brown"><i class="fa-solid fa-heart"></i></div>
+            <div class="badge-text">
+              <strong>Fair Livelihoods</strong>
+              <span>Direct-to-Artisan Earnings</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Machilipatnam Local Heritage Banner -->
+  <section class="heritage-spotlight" id="machilipatnam">
+    <div class="container">
+      <div class="spotlight-card">
+        <div class="spotlight-content">
+          <div class="section-tag"><i class="fa-solid fa-feather-pointed"></i> Rooted In Tradition</div>
+          <h2>Our Pilot Hub: Machilipatnam & Krishna District</h2>
+          <p>
+            Historically known as <em>Masulipatnam</em>, this port city is revered worldwide for its centuries-old <strong>Machilipatnam Kalamkari</strong> (vegetable-dyed hand-block printing), exquisite brass & gold-dipped imitation jewellery, and handloom cotton weaves. 
+          </p>
+          <p>
+            CraftExchange begins its journey here—working alongside local craft families in Machilipatnam, Pedana, and neighboring craft pockets before expanding across Andhra Pradesh.
+          </p>
+          <div class="hub-features">
+            <div class="hub-pill"><i class="fa-solid fa-check"></i> Pedana Hand-Block Artisans</div>
+            <div class="hub-pill"><i class="fa-solid fa-check"></i> Terracotta & Clay Masters</div>
+            <div class="hub-pill"><i class="fa-solid fa-check"></i> Coastal Brass & Filigree Crafters</div>
+            <div class="hub-pill"><i class="fa-solid fa-check"></i> River Grass & Jute Weavers</div>
+          </div>
+        </div>
+        <div class="spotlight-image">
+          <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=800&q=80" alt="Traditional Indian fabric block printing process">
+          <div class="spotlight-caption">
+            <span>Natural vegetable dyes & carved teakwood blocks in Pedana / Machilipatnam</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Who We Are</span>
+        <h2 class="section-title">Bridging Heritage Crafts & Modern Conscious Homes</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+        <p class="section-description">
+          CraftExchange is an upcoming social-impact e-marketplace concept conceived to revive India's rich artisanal traditions by removing exploitative supply chains.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Our Mission</h3>
+          <p>To empower indigenous craftsmen with direct market access, modern digital visibility, and sustainable livelihood so that generational art forms flourish rather than vanish.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon"><i class="fa-solid fa-compass"></i></div>
+          <h3>Our Vision</h3>
+          <p>To establish Machilipatnam and Andhra Pradesh as a globally celebrated sanctuary of ethical, fair-trade, and environmentally conscious handcrafted living.</p>
+        </div>
+
+        <div class="about-card">
+          <div class="about-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <h3>Our Promise</h3>
+          <p>Every rupee spent directly benefits the maker. No artificial markups, no machine counterfeit duplicates—just pure human artistry celebrated with honor.</p>
+        </div>
+      </div>
+
+      <!-- Conceptual Status Alert -->
+      <div class="concept-notice-box">
+        <div class="notice-icon"><i class="fa-solid fa-lightbulb"></i></div>
+        <div class="notice-content">
+          <h4>Pre-Launch Project Status</h4>
+          <p>
+            CraftExchange is currently in its development and artisan cataloging phase. We are conducting on-ground surveys across Machilipatnam, preparing product guidelines, and inviting early supporters to shape the future of ethical craft commerce.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem & Solution Section -->
+  <section class="section problem-solution-section" id="problem-solution">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Why CraftExchange Matters</span>
+        <h2 class="section-title">The Challenge & Our Transformative Solution</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+        <p class="section-description">
+          Traditional artisans have poured soul into their craft for generations, yet systemic issues threaten their survival. Here is how we plan to rewrite that narrative.
+        </p>
+      </div>
+
+      <div class="split-comparison">
+        <!-- Problem Column -->
+        <div class="comparison-column problem-column">
+          <div class="column-header">
+            <div class="col-icon red-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <div>
+              <span class="col-tag">The Reality Today</span>
+              <h3>Challenges Faced by Local Artisans</h3>
+            </div>
+          </div>
+
+          <div class="challenge-cards">
+            <div class="challenge-card">
+              <div class="ch-num">01</div>
+              <div class="ch-info">
+                <h4>Extortionate Middlemen Margins</h4>
+                <p>Brokers and middlemen take up to 60-75% of the final retail price, leaving master crafters with barely enough to cover raw materials.</p>
+              </div>
+            </div>
+
+            <div class="challenge-card">
+              <div class="ch-num">02</div>
+              <div class="ch-info">
+                <h4>Digital Divide & Lack of Reach</h4>
+                <p>Rural artisans lack smartphones, payment gateways, product photography, and e-commerce know-how required to access urban buyers.</p>
+              </div>
+            </div>
+
+            <div class="challenge-card">
+              <div class="ch-num">03</div>
+              <div class="ch-info">
+                <h4>Invasion of Mass-Produced Cheap Copies</h4>
+                <p>Chemical screen prints pretend to be genuine Machilipatnam Kalamkari, driving authentic handmade work out of conventional markets.</p>
+              </div>
+            </div>
+
+            <div class="challenge-card">
+              <div class="ch-num">04</div>
+              <div class="ch-info">
+                <h4>Fading Generational Knowledge</h4>
+                <p>With unpredictable income, younger family members are forced to abandon timeless family trades in favor of low-wage city jobs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution Column -->
+        <div class="comparison-column solution-column">
+          <div class="column-header">
+            <div class="col-icon green-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div>
+              <span class="col-tag">The CraftExchange Way</span>
+              <h3>How Our Platform Solves This</h3>
+            </div>
+          </div>
+
+          <div class="solution-cards">
+            <div class="solution-card">
+              <div class="sol-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <div class="sol-info">
+                <h4>Direct-to-Customer Fair Payouts</h4>
+                <p>Artisans receive up to 90% of retail earnings directly into their bank accounts. Transparent pricing with zero hidden commission deductions.</p>
+              </div>
+            </div>
+
+            <div class="solution-card">
+              <div class="sol-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <div class="sol-info">
+                <h4>Assisted Digital Onboarding & Hubs</h4>
+                <p>Our Machilipatnam on-ground field team assists makers with high-resolution photography, storytelling, packaging, and shipping logistics.</p>
+              </div>
+            </div>
+
+            <div class="solution-card">
+              <div class="sol-icon"><i class="fa-solid fa-fingerprint"></i></div>
+              <div class="sol-info">
+                <h4>Authenticity & Artisan Story Cards</h4>
+                <p>Every product ships with a signed artisan provenance certificate describing the creator, location, materials, and cultural legacy.</p>
+              </div>
+            </div>
+
+            <div class="solution-card">
+              <div class="sol-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="sol-info">
+                <h4>Predictable Income & Sustainable Growth</h4>
+                <p>Pre-orders, bespoke commissions, and year-round marketplace visibility ensure steady dignity and incentivize youth to continue the tradition.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Categories Section -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Curated Collections</span>
+        <h2 class="section-title">Planned Craft Categories</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+        <p class="section-description">
+          Explore the authentic handmade categories we are preparing to showcase from Machilipatnam and regional craft clusters.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="category-filters">
+        <button class="filter-btn active" data-filter="all">All Crafts</button>
+        <button class="filter-btn" data-filter="pottery">Handmade Pottery</button>
+        <button class="filter-btn" data-filter="clothing">Traditional Clothing</button>
+        <button class="filter-btn" data-filter="jewellery">Handcrafted Jewellery</button>
+        <button class="filter-btn" data-filter="woven">Woven Products</button>
+        <button class="filter-btn" data-filter="decor">Home Décor</button>
+      </div>
+
+      <!-- Product Cards Grid -->
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Item 1: Pottery -->
+        <div class="product-card" data-category="pottery">
+          <div class="product-badge upcoming">Concept Preview</div>
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?auto=format&fit=crop&w=800&q=80" alt="Hand-thrown terracotta clay pots" class="product-img">
+            <button class="quick-view-btn" onclick="openConceptModal('pottery-1')">
+              <i class="fa-regular fa-eye"></i> View Craft Details
+            </button>
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <span class="category-tag"><i class="fa-solid fa-fire"></i> Pottery</span>
+              <span class="location-tag">Krishna Delta</span>
+            </div>
+            <h3 class="product-title">Earthy Terracotta Cookware & Water Pitchers</h3>
+            <p class="product-desc">Crafted from natural riverbed clay, porous, natural cooling, unglazed and free of artificial chemical binders.</p>
+            <div class="product-footer">
+              <span class="artisan-credit"><i class="fa-solid fa-user-pen"></i> Kummaripalem Cluster</span>
+              <span class="tag-status">Planned Collection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Clothing / Kalamkari -->
+        <div class="product-card" data-category="clothing">
+          <div class="product-badge upcoming">Heritage Craft</div>
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=80" alt="Machilipatnam Kalamkari Handloom Fabric" class="product-img">
+            <button class="quick-view-btn" onclick="openConceptModal('clothing-1')">
+              <i class="fa-regular fa-eye"></i> View Craft Details
+            </button>
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <span class="category-tag"><i class="fa-solid fa-shirt"></i> Traditional Clothing</span>
+              <span class="location-tag">Machilipatnam / Pedana</span>
+            </div>
+            <h3 class="product-title">Authentic Machilipatnam Kalamkari Sarees & Yardage</h3>
+            <p class="product-desc">Natural vegetable-dyed cotton textiles hand-printed with carved teakwood blocks using centuries-old techniques.</p>
+            <div class="product-footer">
+              <span class="artisan-credit"><i class="fa-solid fa-user-pen"></i> Master Block Printers</span>
+              <span class="tag-status">Planned Collection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Jewellery -->
+        <div class="product-card" data-category="jewellery">
+          <div class="product-badge upcoming">Artisan Metalwork</div>
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80" alt="Handcrafted antique style jewellery" class="product-img">
+            <button class="quick-view-btn" onclick="openConceptModal('jewellery-1')">
+              <i class="fa-regular fa-eye"></i> View Craft Details
+            </button>
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <span class="category-tag"><i class="fa-solid fa-gem"></i> Handcrafted Jewellery</span>
+              <span class="location-tag">Machilipatnam Town</span>
+            </div>
+            <h3 class="product-title">Traditional Temple & Filigree Brass Jewellery</h3>
+            <p class="product-desc">Inspired by classical Andhra temple motifs, featuring brass casting, semi-precious beads, and micro gold-plating.</p>
+            <div class="product-footer">
+              <span class="artisan-credit"><i class="fa-solid fa-user-pen"></i> Machilipatnam Goldsmiths Guild</span>
+              <span class="tag-status">Planned Collection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Woven Products -->
+        <div class="product-card" data-category="woven">
+          <div class="product-badge upcoming">Eco-Friendly</div>
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=800&q=80" alt="Handwoven jute and natural grass baskets" class="product-img">
+            <button class="quick-view-btn" onclick="openConceptModal('woven-1')">
+              <i class="fa-regular fa-eye"></i> View Craft Details
+            </button>
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <span class="category-tag"><i class="fa-solid fa-basket-shopping"></i> Woven Crafts</span>
+              <span class="location-tag">Coastal Belt</span>
+            </div>
+            <h3 class="product-title">Hand-Braided River Grass Mats & Jute Planters</h3>
+            <p class="product-desc">100% biodegradable Korai grass and golden jute woven by women artisan self-help collectives into elegant home storage.</p>
+            <div class="product-footer">
+              <span class="artisan-credit"><i class="fa-solid fa-user-pen"></i> Women Weaver Cooperatives</span>
+              <span class="tag-status">Planned Collection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Home Décor -->
+        <div class="product-card" data-category="decor">
+          <div class="product-badge upcoming">Artisan Living</div>
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=800&q=80" alt="Handcrafted rustic home decor and woodcraft" class="product-img">
+            <button class="quick-view-btn" onclick="openConceptModal('decor-1')">
+              <i class="fa-regular fa-eye"></i> View Craft Details
+            </button>
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <span class="category-tag"><i class="fa-solid fa-couch"></i> Home Décor</span>
+              <span class="location-tag">Andhra Craft Pockets</span>
+            </div>
+            <h3 class="product-title">Carved Wood Printing Blocks & Brass Oil Lamps</h3>
+            <p class="product-desc">Repurposed vintage teakwood printing blocks framed as wall art alongside handcrafted brass Diyas and hanging bells.</p>
+            <div class="product-footer">
+              <span class="artisan-credit"><i class="fa-solid fa-user-pen"></i> Wood Carvers of Pedana</span>
+              <span class="tag-status">Planned Collection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Pottery - Ceramic Studio -->
+        <div class="product-card" data-category="pottery">
+          <div class="product-badge upcoming">Eco-Friendly</div>
+          <div class="product-image-box">
+            <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80" alt="Artisan ceramic vase and clay pottery" class="product-img">
+            <button class="quick-view-btn" onclick="openConceptModal('pottery-2')">
+              <i class="fa-regular fa-eye"></i> View Craft Details
+            </button>
+          </div>
+          <div class="product-content">
+            <div class="product-meta">
+              <span class="category-tag"><i class="fa-solid fa-fire"></i> Pottery</span>
+              <span class="location-tag">Krishna Valley</span>
+            </div>
+            <h3 class="product-title">Hand-Painted Terracotta Floral Urlis & Planters</h3>
+            <p class="product-desc">Traditional wide-mouthed clay floating vessels adorned with mineral-wash natural dyes, ideal for courtyard decor.</p>
+            <div class="product-footer">
+              <span class="artisan-credit"><i class="fa-solid fa-user-pen"></i> Potters Collective</span>
+              <span class="tag-status">Planned Collection</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Categories Callout -->
+      <div class="categories-cta-box text-center">
+        <p>Are you an artisan crafting items in any of these categories in or around Machilipatnam?</p>
+        <button class="btn btn-primary" onclick="openWaitlistModal('artisan')">
+          <i class="fa-solid fa-plus-circle"></i> Submit Your Craft Portfolio for Pre-Onboarding
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section why-us-section" id="why-us">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">The CraftExchange Difference</span>
+        <h2 class="section-title">Why Conscious Shoppers & Artisans Choose Us</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+        <p class="section-description">
+          We are not just another mass commercial e-commerce app; we are an artisan-first ecosystem designed for transparency, cultural preservation, and lasting connection.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon green"><i class="fa-solid fa-hands"></i></div>
+          <h3>100% Genuine Handcrafted</h3>
+          <p>Every single item is hand-worked, hand-moulded, or hand-loomed. No factory assembly lines, zero synthetic counterfeits.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon brown"><i class="fa-solid fa-scale-balanced"></i></div>
+          <h3>Direct Artisan Livelihood</h3>
+          <p>By eradicating intermediary trader layers, up to 90% of your payment flows directly to the artisan's household.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green"><i class="fa-solid fa-leaf"></i></div>
+          <h3>Earth-Kind & Biodegradable</h3>
+          <p>Rooted in natural clay, unbleached cotton, river grass, and natural mineral dyes. Sustainable living as our ancestors practiced it.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon brown"><i class="fa-solid fa-scroll"></i></div>
+          <h3>Living Cultural Heritage</h3>
+          <p>You preserve priceless GI-tagged traditions like Machilipatnam Kalamkari and ensure younger artisans find pride in their inherited skill.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon green"><i class="fa-solid fa-box-open"></i></div>
+          <h3>Plastic-Free Eco Packaging</h3>
+          <p>Our upcoming delivery protocol will use recycled paper, handloom textile scraps, and biodegradable twine for mindful unpacking.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon brown"><i class="fa-solid fa-users-viewfinder"></i></div>
+          <h3>Direct Maker Stories</h3>
+          <p>Scan a QR code on your product box to watch a video clip of the artisan who carved your block or shaped your clay vessel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Artisan Community Voices (Quotes) -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Community Voices</span>
+        <h2 class="section-title">What Our Community Envisions</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="quote-text">
+            "For three generations, my family carved Kalamkari teak blocks in Pedana near Machilipatnam. Traders paid us pennies while selling our work for thousands in metros. CraftExchange will give us our names and dignity back."
+          </p>
+          <div class="artisan-profile">
+            <div class="artisan-avatar">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div>
+              <h5>Srinivasa Rao</h5>
+              <span>Master Woodblock Carver, Pedana</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="quote-text">
+            "I have always looked for authentic Andhra handlooms and terracotta without wondering whether it's machine printed. An online marketplace rooted directly in Machilipatnam with transparent artisan payouts is exactly what mindful consumers need."
+          </p>
+          <div class="artisan-profile">
+            <div class="artisan-avatar">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <div>
+              <h5>Pooja N.</h5>
+              <span>Handloom Enthusiast, Hyderabad</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="quote-mark"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="quote-text">
+            "Clay cookware keeps food healthy and preserves taste. Many urban people want clay pots, but we have no way to reach them from our village. Having a team help us with packing and online orders will transform our village potters."
+          </p>
+          <div class="artisan-profile">
+            <div class="artisan-avatar">
+              <i class="fa-solid fa-user-pen"></i>
+            </div>
+            <div>
+              <h5>Laxmi & Koteswara Rao</h5>
+              <span>Terracotta Potters, Krishna Rural</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Project Roadmap -->
+  <section class="section roadmap-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Our Journey Ahead</span>
+        <h2 class="section-title">The Path to Launch</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+        <p class="section-description">How we are building CraftExchange methodically from the ground up.</p>
+      </div>
+
+      <div class="roadmap-timeline">
+        <div class="timeline-step active-step">
+          <div class="step-badge">Phase 1</div>
+          <div class="step-circle"><i class="fa-solid fa-clipboard-check"></i></div>
+          <div class="step-content">
+            <h4>Artisan Mapping & Field Surveys</h4>
+            <span class="step-status"><i class="fa-solid fa-circle-dot"></i> In Progress (Current)</span>
+            <p>Meeting block printers, potters, and weavers in Machilipatnam to understand pricing, cataloging, and needs.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-badge">Phase 2</div>
+          <div class="step-circle"><i class="fa-solid fa-camera"></i></div>
+          <div class="step-content">
+            <h4>Digital Cataloging & Testing</h4>
+            <span class="step-status">Upcoming Q1</span>
+            <p>Photography, artisan video profiles, and trial runs of eco-friendly protective packaging.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-badge">Phase 3</div>
+          <div class="step-circle"><i class="fa-solid fa-store"></i></div>
+          <div class="step-content">
+            <h4>Pilot Marketplace Launch</h4>
+            <span class="step-status">Upcoming Q2</span>
+            <p>Rollout of the web marketplace for early waitlist members with direct Machilipatnam dispatch.</p>
+          </div>
+        </div>
+
+        <div class="timeline-step">
+          <div class="step-badge">Phase 4</div>
+          <div class="step-circle"><i class="fa-solid fa-earth-asia"></i></div>
+          <div class="step-content">
+            <h4>Regional Expansion</h4>
+            <span class="step-status">Future Vision</span>
+            <p>Expanding across Andhra Pradesh clusters (Mangalagiri, Kondapalli toys, Bobbili veenas, Dharmavaram).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us & Waitlist Registration Form -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-subtitle">Get Involved Early</span>
+        <h2 class="section-title">Connect with CraftExchange</h2>
+        <div class="title-leaf"><i class="fa-solid fa-leaf"></i></div>
+        <p class="section-description">
+          Whether you are a traditional artisan in Andhra Pradesh or a customer who cherishes authentic handmade goods, we'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <!-- Contact Information & Regional Hub Details -->
+        <div class="contact-info-panel">
+          <div class="info-card-header">
+            <h3>Machilipatnam Coordination Office</h3>
+            <p>Our upcoming regional hub coordinate point for artisan onboarding and field logistics.</p>
+          </div>
+
+          <div class="info-items-list">
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>Pilot Location</strong>
+                <p>Machilipatnam, Krishna District, Andhra Pradesh - 521001, India</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <strong>Email Address</strong>
+                <p><a href="mailto:contact.craftexchange@gmail.com">contact.craftexchange@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <strong>Helpline / WhatsApp</strong>
+                <p><a href="tel:+919876543210">+91 98765 43210 (Artisan Desk)</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <strong>Operational Hours</strong>
+                <p>Monday – Saturday: 9:30 AM to 6:00 PM IST</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Highlight Box -->
+          <div class="artisan-callout-box">
+            <i class="fa-solid fa-bullhorn"></i>
+            <div>
+              <strong>Are you an artisan from Krishna District?</strong>
+              <p>You don't need any technical skills to join. Our local field representatives will visit your workshop to assist with cataloging!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form -->
+        <div class="contact-form-panel">
+          <div class="form-tabs">
+            <button class="form-tab-btn active" id="tabArtisan" onclick="switchFormType('artisan')">
+              <i class="fa-solid fa-hands-holding"></i> I am an Artisan
+            </button>
+            <button class="form-tab-btn" id="tabShopper" onclick="switchFormType('shopper')">
+              <i class="fa-solid fa-heart"></i> I am a Craft Patron
+            </button>
+          </div>
+
+          <form id="contactForm" onsubmit="handleFormSubmit(event)" class="custom-form">
+            <input type="hidden" id="userRole" value="Artisan">
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="fullName">Full Name <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="fullName" name="fullName" placeholder="e.g. Ramana Rao" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp Number <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="phone" name="phone" placeholder="e.g. 98480 12345" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="email">Email Address (Optional)</label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="email" name="email" placeholder="e.g. ramana@example.com">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="location">Town / Village Location <span class="req">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-map-pin"></i>
+                  <input type="text" id="location" name="location" placeholder="e.g. Machilipatnam / Pedana" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="craftCategory" id="categoryLabel">Craft Specialization / Interest <span class="req">*</span></label>
+              <div class="input-with-icon">
+                <i class="fa-solid fa-shapes"></i>
+                <select id="craftCategory" name="craftCategory" required>
+                  <option value="" disabled selected>Select category...</option>
+                  <option value="Machilipatnam Kalamkari & Clothing">Machilipatnam Kalamkari & Traditional Clothing</option>
+                  <option value="Handmade Pottery & Terracotta">Handmade Pottery & Terracotta Clay</option>
+                  <option value="Handcrafted & Filigree Jewellery">Handcrafted & Filigree Jewellery</option>
+                  <option value="Woven & Natural Fibre Products">Woven & Natural Fibre Products (Jute / River Grass)</option>
+                  <option value="Earthy Home Décor & Woodcraft">Earthy Home Décor & Woodcraft</option>
+                  <option value="Other Traditional Craft">Other Traditional Andhra Craft</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message / Tell Us About Your Craft</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about the craft you create, your workshop experience, or what you'd like to see on CraftExchange..."></textarea>
+            </div>
+
+            <div class="form-checkbox">
+              <input type="checkbox" id="consent" required checked>
+              <label for="consent">I would like to receive pre-launch WhatsApp / SMS updates regarding the Machilipatnam CraftExchange initiative.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+              <i class="fa-solid fa-paper-plane"></i> Submit Early Interest
+            </button>
+          </form>
+
+          <!-- Submission Feedback Box (Hidden initially) -->
+          <div id="formSuccessMessage" class="form-success-box" style="display: none;">
+            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Thank You for Joining the Movement!</h3>
+            <p id="successDetailText">Your interest has been recorded in our local registry. Our Machilipatnam team will get in touch with you shortly.</p>
+            <button class="btn btn-outline" onclick="resetContactForm()">Submit Another Response</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <div class="logo-mark"><i class="fa-solid fa-hands-holding-circle"></i></div>
+          <div class="logo-text">
+            <span class="logo-title white">CraftExchange</span>
+            <span class="logo-tagline cream">Artisan to Home</span>
+          </div>
+        </div>
+        <p class="footer-bio">
+          An upcoming social marketplace concept empowering traditional artisans in Machilipatnam and Andhra Pradesh with dignity, fair compensation, and global appreciation.
+        </p>
+        <div class="footer-social-links">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Our Purpose</a></li>
+          <li><a href="#problem-solution">The Problem & Solution</a></li>
+          <li><a href="#categories">Product Categories</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Heritage Crafts</h4>
+        <ul>
+          <li><a href="#categories">Machilipatnam Kalamkari</a></li>
+          <li><a href="#categories">Terracotta & Clay Pots</a></li>
+          <li><a href="#categories">Temple Brass Jewellery</a></li>
+          <li><a href="#categories">Korai Grass Weaving</a></li>
+          <li><a href="#categories">Teakwood Block Carving</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Pilot Hub</h4>
+        <p class="footer-hub-address">
+          <i class="fa-solid fa-map-location-dot"></i> <strong>Machilipatnam Regional Office</strong><br>
+          Krishna District, Andhra Pradesh, 521001<br>
+          <i class="fa-solid fa-envelope"></i> contact.craftexchange@gmail.com<br>
+          <i class="fa-solid fa-phone"></i> +91 98765 43210
+        </p>
+        <div class="status-indicator">
+          <span class="indicator-dot"></span> Status: Pre-Launch Concept Stage
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 <strong>CraftExchange</strong>. Handcrafted with heart in Andhra Pradesh, India. All rights reserved.</p>
+        <p class="disclaimer-note">
+          <em>* Disclaimer: CraftExchange is currently an upcoming marketplace concept and community onboarding initiative. No commercial retail transactions are conducted on this preview site.</em>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal for Craft Concept Details / Quick View -->
+  <div class="custom-modal" id="conceptModal" role="dialog" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeConceptModal()"></div>
+    <div class="modal-window">
+      <button class="modal-close" onclick="closeConceptModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modalDynamicContent">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal for Artisan / Patron Fast Waitlist Signup -->
+  <div class="custom-modal" id="waitlistModal" role="dialog" aria-hidden="true">
+    <div class="modal-backdrop" onclick="closeWaitlistModal()"></div>
+    <div class="modal-window modal-compact">
+      <button class="modal-close" onclick="closeWaitlistModal()" aria-label="Close modal">&times;</button>
+      <div class="modal-header-styled">
+        <div class="modal-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3 id="waitlistModalTitle">Join the CraftExchange Waitlist</h3>
+        <p id="waitlistModalSubtitle">Be the first to know when our Machilipatnam artisan marketplace opens.</p>
+      </div>
+      <div class="modal-body">
+        <form id="modalQuickForm" onsubmit="handleQuickModalSubmit(event)">
+          <div class="form-group">
+            <label for="qName">Your Name</label>
+            <input type="text" id="qName" required placeholder="e.g. Venkata Lakshmi">
+          </div>
+          <div class="form-group">
+            <label for="qPhone">Phone / WhatsApp</label>
+            <input type="tel" id="qPhone" required placeholder="e.g. 98480 12345">
+          </div>
+          <div class="form-group">
+            <label for="qRole">I am interested as</label>
+            <select id="qRole" required>
+              <option value="Local Artisan (Machilipatnam / AP)">Local Artisan (Machilipatnam / AP)</option>
+              <option value="Conscious Buyer / Craft Lover">Conscious Buyer / Craft Lover</option>
+              <option value="Retail Partner / NGO">Retail Partner / NGO Supporter</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Confirm Pre-Registration</button>
+        </form>
+        <div id="modalSuccess" class="form-success-box" style="display:none; margin-top:1rem;">
+          <p><strong>Success!</strong> You are on our priority waitlist. We will notify you via WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotification" class="toast-notification"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
+

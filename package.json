@@ -1,0 +1,20 @@
+{
+  "name": "craftexchange-frontend",
+  "version": "1.0.0",
+  "description": "CraftExchange — Upcoming Artisan Marketplace Concept for Machilipatnam & Coastal Andhra Pradesh",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "craftexchange",
+    "machilipatnam",
+    "kalamkari",
+    "handmade",
+    "artisans",
+    "andhra-pradesh"
+  ],
+  "author": "CraftExchange Team",
+  "license": "MIT"
+}
+
