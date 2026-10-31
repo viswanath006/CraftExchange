@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const PORT = 3000;
-const PUBLIC_DIR = __dirname;
+const PUBLIC_DIR = path.resolve(__dirname);
 
 const MIME_TYPES = {
   '.html': 'text/html; charset=utf-8',
@@ -22,16 +22,17 @@ const MIME_TYPES = {
 };
 
 const server = http.createServer((req, res) => {
-  // Normalize URL
-  let safePath = path.normalize(req.url.split('?')[0]);
-  if (safePath === '/' || safePath === '\\') {
-    safePath = '/index.html';
+  let reqUrl = req.url.split('?')[0];
+  if (reqUrl === '/' || reqUrl === '') {
+    reqUrl = '/index.html';
   }
 
-  const filePath = path.join(PUBLIC_DIR, safePath);
+  // Remove leading slashes to safely resolve inside PUBLIC_DIR
+  const safeRelative = reqUrl.replace(/^\/+/, '');
+  const filePath = path.resolve(PUBLIC_DIR, safeRelative);
 
-  // Security check: ensure path is within directory
-  if (!filePath.startsWith(PUBLIC_DIR)) {
+  // Case-insensitive directory containment check for Windows
+  if (!filePath.toLowerCase().startsWith(PUBLIC_DIR.toLowerCase())) {
     res.writeHead(403, { 'Content-Type': 'text/plain' });
     return res.end('403 Forbidden');
   }
@@ -50,8 +51,7 @@ const server = http.createServer((req, res) => {
       'Access-Control-Allow-Origin': '*'
     });
 
-    const stream = fs.createReadStream(filePath);
-    stream.pipe(res);
+    fs.createReadStream(filePath).pipe(res);
   });
 });
 
@@ -62,4 +62,3 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`Or across local network at: http://127.0.0.1:${PORT}`);
   console.log(`=======================================================`);
 });
-
