@@ -2,8 +2,8 @@
   "name": "craftexchange-frontend",
   "version": "1.0.0",
   "description": "CraftExchange — Upcoming Artisan Marketplace Concept for Machilipatnam & Coastal Andhra Pradesh",
-  "main": "server.js",
   "scripts": {
+    "build": "echo 'Static build ready'",
     "start": "node server.js"
   },
   "keywords": [
@@ -14,7 +14,6 @@
     "artisans",
     "andhra-pradesh"
   ],
-  "author": "CraftExchange Team",
+  "author": "Phanindra Kaushik Chennu",
   "license": "MIT"
 }
-
