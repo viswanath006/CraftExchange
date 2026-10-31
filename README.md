@@ -44,7 +44,7 @@ Run the lightweight local server without external dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/phanikaushik2630-ship-it/CraftExchange.git
+git clone https://github.com/viswanath006/CraftExchange.git
 
 # Navigate to project directory
 cd CraftExchange
@@ -72,3 +72,4 @@ Or connect this repository directly in your [Vercel Dashboard](https://vercel.co
 
 ## 📜 Disclaimer
 *CraftExchange is currently an upcoming marketplace concept and community onboarding initiative in its pre-launch stage. No live retail transactions take place on this preview site.*
+
